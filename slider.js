@@ -54,3 +54,16 @@ const showImage = (index) => {
 
 showImage(indexOfSlide);
 
+const nextSlide = () => {
+    indexOfSlide >= numberOfImages - 1 ? indexOfSlide = 0 : indexOfSlide++;
+    showImage(indexOfSlide);
+  }
+  
+const previousSlide = () => {
+    indexOfSlide <= 0 ? indexOfSlide = numberOfImages - 1 : indexOfSlide--;
+    showImage(indexOfSlide);
+  }
+  
+nextButton.addEventListener('click', nextSlide);
+previousButton.addEventListener('click', previousSlide);
+
