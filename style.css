@@ -95,6 +95,8 @@ a {
 }
 
 img {
+    object-fit: cover;
+    object-position: 40% 50%;
     width: 100%;
 }
 
